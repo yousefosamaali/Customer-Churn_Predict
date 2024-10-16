@@ -86,8 +86,7 @@ Target Variable: Churn (Whether the customer left in the last month)
 ![Alt Text](./imgs/image_6.png)
 
 
-11.	Confusion Matrix Visualization:
-
+10.	Confusion Matrix Visualization:
 10.1.	The confusion matrix is computed and visualized using Seaborn's heatmap functionality, displaying the model's performance in a more intuitive manner.
 
 ![Alt Text](./imgs/image_7.png)
@@ -102,7 +101,6 @@ Target Variable: Churn (Whether the customer left in the last month)
 13.1.	The application generates visualizations of:
 13.1.1.	Training History: Accuracy and loss curves for both training and validation sets.
 13.1.2.	Confusion Matrix: A heatmap indicating true positives, false positives, true negatives, and false negatives.
-
 
 
 
