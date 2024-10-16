@@ -33,27 +33,37 @@ Target Variable: Churn (Whether the customer left in the last month)
 4.1.	Churn 
 4.1.1.	We visualized the distribution of the Churn column using a count plot:
 4.1.2.	Around 27% of the customers in the dataset have churned, while 73% have remained.
+
 ![Alt Text](./imgs/image_1.png)
+
 4.2.	 Churn by Contract Type
 4.2.1.	The contract type has a strong influence on customer churn. We plotted the churn rate based on contract type:
 4.2.2.	Month-to-month contracts have a significantly higher churn rate compared to longer-term contracts
+
 ![Alt Text](./imgs/image_2.png)
+
 4.3.	Tenure and Churn
 4.3.1.	The churn rate decreases as tenure increases. We segmented the tenure into groups to visualize the churn rate for different tenure groups:
 4.3.2.	Tenure 1-4 months: Highest churn rate
 4.3.3.	Tenure 5-12 months: Moderate churn rate
 4.3.4.	Tenure 13-24 months: Lower churn rate
 4.3.5.	Tenure > 24 months: Lowest churn rate
+
 ![Alt Text](./imgs/image_3.png)
+
 4.4.	Monthly Charges and Churn
 
 4.4.1.	The churn rate is higher for customers with higher monthly charges. Customers with monthly charges above $70 have the highest churn rate.
+
 ![Alt Text](./imgs/image_4.png)
+
 4.5.	Correlation Analysis
 
 4.5.1.	A heatmap was used to visualize the correlation between the numerical features and churn:
 4.5.2.	The correlation between Churn and numerical features is relatively weak, but MonthlyCharges and tenure show a notable relationship.
+
 ![Alt Text](./imgs/image_5.png)
+
 5.	Data Preparation:
 5.1.	The input features are stored in X_transformed, and the target variable is df['Churn'].
 5.2.	The dataset is split into training and testing sets using a 75%-25% split.
@@ -72,10 +82,14 @@ Target Variable: Churn (Whether the customer left in the last month)
 9.	Model Evaluation:
 9.1.	After training, the model’s accuracy is evaluated on the test set.
 9.2.	A classification report is generated, providing precision, recall, and F1-score metrics, which is displayed in a DataFrame format.
+  	
 ![Alt Text](./imgs/image_6.png)
-10.	Confusion Matrix Visualization:
+
+
+11.	Confusion Matrix Visualization:
 
 10.1.	The confusion matrix is computed and visualized using Seaborn's heatmap functionality, displaying the model's performance in a more intuitive manner.
+
 ![Alt Text](./imgs/image_7.png)
 
 11.	K-Fold Cross-Validation:
